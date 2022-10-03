@@ -5,3 +5,4 @@ def test_point():
     a = Point(x, y)
     assert a.get_point() == (1, 2)
 
+

@@ -1,6 +1,6 @@
 class Point(object):
 
-    def __init__(self, x, y):
+    def __init__(self, x=0.0, y=0.0):
         self.x = x
         self.y = y
 
@@ -10,3 +10,8 @@ class Point(object):
 
     def get_point(self):
        return (self.x, self.y)
+
+    def __str__(self):
+        return (self.x, self.y)
+
+    __repr__ = __str__
