@@ -1,6 +1,6 @@
 import math
 
-class circle(object):
+class Circle(object):
 
     def __init__(self, r):
         self.radius = r
