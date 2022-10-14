@@ -27,3 +27,7 @@ class Line(object):
         dist_x = self.p2.x - self.p1.x
         line_slope = dist_y / dist_x
         return line_slope
+    
+    def intercept(self):
+        constant = self.p1.y - (self.slope() * self.p1.x)
+        return constant
